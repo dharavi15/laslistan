@@ -1,17 +1,25 @@
 {
   "name": "laslistan",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "This project tests the key features of the Läslistan app using Playwright.",
+  "main": "playwright.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "playwright": "^1.52.0",
+    "playwright-core": "^1.52.0",
+    "undici-types": "^6.21.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0"
+  },
   "scripts": {
-    "test-e2e": "playwright test",
-    "test-e2e-ui": "playwright test ui"
+   "test": "playwright test",
+   "test-e2e": "playwright test",
+   "test-ui": "playwright test --ui"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@playwright/test": "^1.52.0",
-    "@types/node": "^22.15.29"
-  }
+  "license": "ISC"
 }
